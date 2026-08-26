@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BND 2.0: Raaslympus — Bucky Noh Dhol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ===== BND 2.0 "Raaslympus" — Greek gods theme (Olympian gold · deep blue · marble) ===== */
+    :root {
+      --maroon:   #1E2E5E;   /* deep blue base */
+      --maroon-2: #24408A;   /* royal blue for gradients */
+      --plum:     #16244F;   /* navy — dark sections */
+      --ink:      #0D1630;
+      --beige:    #F3EBC9;   /* marble cream text */
+      --gold:     #DAAE4E;   /* Olympian gold */
+      --gold-lt:  #F0D488;
+      --magenta:  #9FB566;   /* olive / laurel green for small labels */
+      --font-display: 'Cinzel', serif;   /* Trajan-style Roman/Greek caps */
+    }
+    /* Deep-blue palette on the shared chrome (overrides the default plum tints) */
+    .nav--solid, .nav--scrolled { background: rgba(13, 22, 48, .90); border-bottom-color: rgba(218, 174, 78, .35); }
+    .nav__dropdown { background: rgba(13, 22, 48, .97); }
+    .page-header {
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(218, 174, 78, .26) 0%, transparent 65%),
+        linear-gradient(180deg, #16244F 0%, #1E2E5E 100%);
+    }
+    .page-body {
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(218, 174, 78, .16) 0%, transparent 60%),
+        #16244F;
+    }
+    .page-header__meta, .page-body__intro { color: rgba(243, 235, 201, .85); }
+    /* Year logo in the nav (replaces the "LOGO" placeholder on this page) */
+    .nav__brand--placeholder {
+      background-image: url('assets/img/logos/bnd2.png');
+      background-size: cover;
+      width: 64px;
+      border-radius: 50%;
+      background-position: center;
+      border: 1px solid rgba(218, 174, 78, .7);
+      color: transparent;
+      font-size: 0;
+    }
+    .nav__brand--placeholder:hover { border-color: var(--gold); }
+  </style>
+</head>
+<body data-page="history-bnd2" data-nav-solid="true">
+
+  <!-- ===== NAV (injected by script.js) ===== -->
+  <header class="nav nav--solid" id="nav"></header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <p class="page-header__eyebrow">History &middot; Bucky Noh Dhol 2.0</p>
+    <h1 class="section-title"><span class="section-title__accent">Raaslympus</span></h1>
+    <span class="section-divider"></span>
+    <p class="page-header__meta">Shannon Hall &middot; January 24, 2026</p>
+  </header>
+
+  <!-- ===== CONTENT ===== -->
+  <section class="page-body">
+    <div class="page-body__inner">
+      <p class="page-body__intro">
+        Bucky Noh Dhol 2.0 &mdash; <em>Raaslympus</em> &mdash; brought four collegiate teams to
+        Shannon Hall.
+      </p>
+
+      <!-- Show order -->
+      <h2 class="subhead">Show <span class="section-title__accent">Order</span></h2>
+      <ol class="lineup">
+        <li class="lineup__row">
+          <span class="lineup__num">1</span>
+          <span class="lineup__team">Northwestern Raas</span>
+        </li>
+        <li class="lineup__row lineup__row--winner">
+          <span class="lineup__num">2</span>
+          <span class="lineup__team">Case CobRAAS</span>
+          <span class="lineup__place lineup__place--1">1st Place</span>
+        </li>
+        <li class="lineup__row lineup__row--winner">
+          <span class="lineup__num">3</span>
+          <span class="lineup__team">OSU BuckRaas</span>
+          <span class="lineup__place lineup__place--2">2nd Place</span>
+        </li>
+        <li class="lineup__row">
+          <span class="lineup__num">4</span>
+          <span class="lineup__team">UNC TarHeel Raas</span>
+        </li>
+      </ol>
+
+      <!-- Mixtape -->
+      <h2 class="subhead">Competition <span class="section-title__accent">Mixtape</span></h2>
+      <div class="link-list">
+        <a class="link-card" href="https://soundcloud.com/dj_ketchup/the-labyrinth-bucky-noh-dhol-official-mixtape-2026"
+           target="_blank" rel="noopener">
+          <span class="link-card__label"><span class="link-card__play" aria-hidden="true"></span>The Labyrinth &mdash; DJ KETCHUP &amp; Raghav Pandya</span>
+          <span class="link-card__status">Listen on SoundCloud &rarr;</span>
+        </a>
+      </div>
+
+      <!-- Leadership -->
+      <h2 class="subhead">Leadership <span class="section-title__accent">Team</span></h2>
+      <p class="team__group-title">Directors</p>
+      <div class="team__grid team__grid--featured" data-photos="assets/img/board/bnd2">
+        <article class="member"><div class="member__photo"></div><p class="member__name">Prishaa Rajesh</p><p class="member__role">Director</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Khushi Patel</p><p class="member__role">Director</p></article>
+      </div>
+
+      <p class="team__group-title team__group-title--spaced">Executive Board</p>
+      <div class="team__grid" data-photos="assets/img/board/bnd2">
+        <article class="member"><div class="member__photo"></div><p class="member__name">Sripada Thammera</p><p class="member__role">Social</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Kurinji Kumar Shivakumar</p><p class="member__role">Hospitality</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Shrika Patel</p><p class="member__role">Hospitality</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Isha Darshan Lokande</p><p class="member__role">Finance</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Rhea Solome Yenubari</p><p class="member__role">Finance</p></article>
+        <article class="member" data-photo-pos="center 28%"><div class="member__photo"></div><p class="member__name">Siya Pharma</p><p class="member__role">Sponsorship</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Jash Kadakia</p><p class="member__role">Sponsorship</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Aanchal Capoor</p><p class="member__role">Head Liaison</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Krishna Maganti</p><p class="member__role">Head Liaison</p></article>
+        <article class="member" data-photo-pos="center 28%"><div class="member__photo"></div><p class="member__name">Kaitlyn Narman</p><p class="member__role">Marketing</p></article>
+        <article class="member" data-photo-pos="center 25%"><div class="member__photo"></div><p class="member__name">Shruthi Sridhar</p><p class="member__role">Marketing</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Nandini Shah</p><p class="member__role">Judging</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Keshav Shah</p><p class="member__role">Logistics</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Rohan Vuppalapati</p><p class="member__role">Registration</p></article>
+        <article class="member" data-photo-pos="center 28%"><div class="member__photo"></div><p class="member__name">Hiya Tanna</p><p class="member__role">Risk Management</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Neel Shah</p><p class="member__role">Tech</p></article>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

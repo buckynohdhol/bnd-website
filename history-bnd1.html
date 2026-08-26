@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BND 1.0: Dons in the 608 — Bucky Noh Dhol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ===== BND 1.0 "Dons in the 608" — mafia theme (blood red · ivory · gold) ===== */
+    :root {
+      --maroon:   #650000;   /* blood red */
+      --maroon-2: #540000;   /* rosewood */
+      --plum:     #430000;   /* black bean — dark sections */
+      --ink:      #2A0000;
+      --beige:    #FAF7EE;   /* ivory text */
+      --magenta:  #CBA07A;   /* antique-gold rose for small labels */
+      --font-display: 'Cinzel', serif;   /* classical serif = mafia elegance */
+    }
+    /* Blood-red palette on the shared chrome (overrides the default plum tints) */
+    .nav--solid, .nav--scrolled { background: rgba(43, 0, 0, .90); border-bottom-color: rgba(198, 161, 91, .35); }
+    .nav__dropdown { background: rgba(43, 0, 0, .97); }
+    .page-header {
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(101, 0, 0, .85) 0%, transparent 65%),
+        linear-gradient(180deg, #430000 0%, #650000 100%);
+    }
+    .page-body {
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(101, 0, 0, .55) 0%, transparent 60%),
+        #430000;
+    }
+    .page-header__meta, .page-body__intro { color: rgba(250, 247, 238, .85); }
+    /* Year logo in the nav (replaces the "LOGO" placeholder on this page) */
+    .nav__brand--placeholder {
+      background-image: url('assets/img/logos/bnd1.jpg');
+      background-size: cover;
+      width: 64px;
+      border-radius: 50%;
+      background-position: center 30%;
+      border: 1px solid rgba(198, 161, 91, .6);
+      color: transparent;
+      font-size: 0;
+    }
+    .nav__brand--placeholder:hover { border-color: var(--gold); }
+  </style>
+</head>
+<body data-page="history-bnd1" data-nav-solid="true">
+
+  <!-- ===== NAV (injected by script.js) ===== -->
+  <header class="nav nav--solid" id="nav"></header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <p class="page-header__eyebrow">History &middot; Bucky Noh Dhol 1.0</p>
+    <h1 class="section-title">Dons in the <span class="section-title__accent">608</span></h1>
+    <span class="section-divider"></span>
+    <p class="page-header__meta">Shannon Hall &middot; January 25, 2025</p>
+  </header>
+
+  <!-- ===== CONTENT ===== -->
+  <section class="page-body">
+    <div class="page-body__inner">
+      <p class="page-body__intro">
+        The inaugural Bucky Noh Dhol &mdash; <em>Dons in the 608</em> &mdash; brought four
+        collegiate teams to Shannon Hall.
+      </p>
+
+      <!-- Show order -->
+      <h2 class="subhead">Show <span class="section-title__accent">Order</span></h2>
+      <ol class="lineup">
+        <li class="lineup__row">
+          <span class="lineup__num">1</span>
+          <span class="lineup__team">Northwestern Raas</span>
+        </li>
+        <li class="lineup__row lineup__row--winner">
+          <span class="lineup__num">2</span>
+          <span class="lineup__team">OSU BuckRaas</span>
+          <span class="lineup__place lineup__place--1">1st Place</span>
+        </li>
+        <li class="lineup__row">
+          <span class="lineup__num">3</span>
+          <span class="lineup__team">UNC TarHeel Raas</span>
+        </li>
+        <li class="lineup__row lineup__row--winner">
+          <span class="lineup__num">4</span>
+          <span class="lineup__team">Case CobRAAS</span>
+          <span class="lineup__place lineup__place--2">2nd Place</span>
+        </li>
+      </ol>
+
+      <!-- Mixtape -->
+      <h2 class="subhead">Competition <span class="section-title__accent">Mixtape</span></h2>
+      <div class="link-list">
+        <a class="link-card" href="https://soundcloud.com/dj_ketchup/chandaal-bucky-noh-dhol-official-mixtape-2025"
+           target="_blank" rel="noopener">
+          <span class="link-card__label"><span class="link-card__play" aria-hidden="true"></span>Chandaal &mdash; DJ KETCHUP</span>
+          <span class="link-card__status">Listen on SoundCloud &rarr;</span>
+        </a>
+      </div>
+
+      <!-- Leadership -->
+      <h2 class="subhead">Leadership <span class="section-title__accent">Team</span></h2>
+      <p class="team__group-title">Directors</p>
+      <div class="team__grid team__grid--featured" data-photos="assets/img/board/bnd1">
+        <article class="member"><div class="member__photo"></div><p class="member__name">Anjali Patel</p><p class="member__role">Director</p></article>
+        <article class="member" data-photo-pos="center 22%"><div class="member__photo"></div><p class="member__name">Devagya Gupta</p><p class="member__role">Director</p></article>
+      </div>
+
+      <p class="team__group-title team__group-title--spaced">Executive Board</p>
+      <div class="team__grid" data-photos="assets/img/board/bnd1">
+        <article class="member"><div class="member__photo"></div><p class="member__name">Khushi Kotilaine</p><p class="member__role">Social</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Megha Brambhatt</p><p class="member__role">Social</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Vishwa Vijay Prabhakar</p><p class="member__role">Hospitality</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Sakar Gupta</p><p class="member__role">Hospitality</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Anjali Mehta</p><p class="member__role">Senior Advisor</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Arman Gupta</p><p class="member__role">Sponsorship &amp; Finance</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Karthik Ashok</p><p class="member__role">Sponsorship &amp; Finance</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Riya Choudhary</p><p class="member__role">Head Liaison</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Pranav Narayanam</p><p class="member__role">Head Liaison</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Arun Sivarajah</p><p class="member__role">Judging</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Sudeeksha Nooka</p><p class="member__role">Judging</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Prishaa Rajesh</p><p class="member__role">Logistics</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Khushi Patel</p><p class="member__role">Registration</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Shriya Patel</p><p class="member__role">Registration</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Rathika Murali</p><p class="member__role">Risk Management</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Keshav Shah</p><p class="member__role">Tech</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Nandini Shah</p><p class="member__role">Tech</p></article>
+        <article class="member"><div class="member__photo"></div><p class="member__name">Sowmya Subramaniam</p><p class="member__role">Marketing</p></article>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

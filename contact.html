@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Bucky Noh Dhol 3.0</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact" data-nav-solid="true">
+
+  <!-- ===== NAV (injected by script.js) ===== -->
+  <header class="nav nav--solid" id="nav"></header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header class="page-header">
+    <p class="page-header__eyebrow">Get in touch</p>
+    <h1 class="section-title">Contact <span class="section-title__accent">Us</span></h1>
+    <span class="section-divider"></span>
+  </header>
+
+  <!-- ===== CONTENT ===== -->
+  <section class="page-body">
+    <div class="page-body__inner">
+      <p class="page-body__intro">
+        Questions, performing interest, sponsorships, or press &mdash; fill out the form below and
+        we&rsquo;ll be in touch.
+      </p>
+
+      <form class="contact-form" id="contactForm" data-formsubmit method="POST">
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_subject" value="New BND website inquiry" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <!-- honeypot: bots fill this, humans don't -->
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" />
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName">First Name <span class="req">*</span></label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-field">
+            <label for="lastName">Last Name <span class="req">*</span></label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-field">
+          <label for="inquiry">Who is inquiring?</label>
+          <select id="inquiry" name="inquiry">
+            <option>General inquiry</option>
+            <option>Competing team</option>
+            <option>Sponsor / partner</option>
+            <option>Press / media</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message <span class="req">*</span></label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-solid">Send Message</button>
+      </form>
+
+      <h2 class="subhead">Or reach us <span class="section-title__accent">directly</span></h2>
+      <div class="link-list">
+        <a class="link-card" href="https://www.instagram.com/buckynohdhol/" target="_blank" rel="noopener">
+          <span class="link-card__label">
+            <span class="link-card__img" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>@buckynohdhol
+          </span>
+          <span class="link-card__status">Instagram &rarr;</span>
+        </a>
+
+        <a class="link-card" data-email-link href="#">
+          <span class="link-card__label">
+            <span class="link-card__img" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>
+              </svg>
+            </span><span data-email-text>email</span>
+          </span>
+          <span class="link-card__status">Email &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
