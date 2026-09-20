@@ -24,7 +24,7 @@ python3 -m http.server 8731
 
 ## Site map / pages
 - [[projects/BND/Website/index.html|index.html]] — **Home**: hero · About · Show details · Sponsors & Partners
-- [[projects/BND/Website/leadership.html|leadership.html]] — **Leadership Team**: Directors + 12-role Executive Board (current 3.0 board)
+- [[projects/BND/Website/leadership.html|leadership.html]] — **Leadership Team**: Directors + 18-person Executive Board (current 3.0 board, roster as of 2026-09-20)
 - [[projects/BND/Website/media.html|media.html]] — **Resources › Media**: BND [1.0](https://youtube.com/playlist?list=PL9rxqdfeM-K3I3iizQIkxmmhEVjsnqvH5) & [2.0](https://youtube.com/playlist?list=PL0IbC8YscBseARxyR5XM2y_LIe77MPVrv) playlists (balcony/front-row) + Google Drive photo galleries; links to the [BND YouTube channel](https://www.youtube.com/channel/UCUnD15uOIyKq6gar_QflS8g)
 - [[projects/BND/Website/forms.html|forms.html]] — **Resources › Forms**: Liaisons & Event Manager Application (placeholder)
 - [[projects/BND/Website/policies.html|policies.html]] — **Resources › Policies**: SAP, AOD, and Gun Violence policies (all live)
@@ -86,7 +86,7 @@ Change the menu in that one function — all pages update.
 - [ ] Forms: real Liaisons & Event Manager Application link; Media photo gallery
 - [ ] **Activate FormSubmit** — submit the contact form once from the live site, click the confirmation email (then optionally swap in the random alias)
 - [ ] Footer (socials, copyright)
-- [ ] Deploy (host TBD)
+- [x] Deploy — GitHub Pages from `buckynohdhol/bnd-website`, live at <https://buckynohdhol.com> (HTTPS enforced)
 
 ## Related
 - [[Website]] — the Directors-level page note this site belongs to
