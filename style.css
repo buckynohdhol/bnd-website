@@ -229,6 +229,22 @@ body {
   margin: 1.6rem 0 .5rem;
   padding-left: 10px; /* optical centering for letter-spacing */
 }
+.hero__badge {
+  display: inline-block;
+  margin-bottom: 1.4rem;
+  padding: .55rem 1.3rem;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: rgba(198, 161, 91, .12);
+  color: var(--gold);
+  font-size: clamp(.68rem, 1.6vw, .82rem);
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  .hero__badge { letter-spacing: .1em; padding: .5rem .9rem; font-size: .62rem; }
+}
 .hero__tagline {
   font-size: clamp(.85rem, 2vw, 1.1rem);
   letter-spacing: 3px;
