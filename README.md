@@ -81,7 +81,10 @@ Change the menu in that one function — all pages update.
 - [x] History 1.0 (Dons in the 608) + 2.0 (Raaslympus): show orders, mixtapes, rosters, **full headshots**, **per-year themes + logos**
 - [x] Bollywood re-theme of Home/Leadership (removed patriotic navy → jewel plum/maroon, ornamental gold dividers)
 - [x] Real **BND 3.0 logo** in the nav ([[projects/BND/Website/assets/img/logos/bnd3.png|bnd3.png]]) — replaced the dashed placeholder
-- [ ] Headshots for the **3.0 Leadership** board (dashed placeholders now; bnd1/bnd2 done)
+- [x] Headshots for the **3.0 Leadership** board — all 19 in `assets/img/board/bnd3/`, face-cropped to 4:5 head-and-shoulders from the photoshoot originals (2026-11-18, commit `b48e3c1`)
+- [x] **"Official Raas All-Stars Bid Competition"** badge on the Home hero (`.hero__badge`) — BND 3.0 confirmed as a RAS bid comp (2026-11-18)
+- [x] Sponsors: **Swagat Madison (Gold)** + **Potbelly (Silver)** added ahead of MSC/ASM (2026-11-18)
+- [ ] Mobile nav overflows the right edge at phone width (pre-existing)
 - [x] Finance board member on 3.0 Leadership — Vaibhav Singotam
 - [ ] Forms: real Liaisons & Event Manager Application link; Media photo gallery
 - [ ] **Activate FormSubmit** — submit the contact form once from the live site, click the confirmation email (then optionally swap in the random alias)
