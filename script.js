@@ -19,7 +19,10 @@ function buildNav() {
   mount.className = 'nav' + (solid ? ' nav--solid' : '');
   mount.innerHTML = `
     <a href="index.html" class="nav__brand nav__brand--placeholder" aria-label="BND logo (placeholder)">LOGO</a>
-    <nav class="nav__links">
+    <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="nav-links">
       <div class="nav__item nav__item--has-dropdown">
         <a href="index.html" class="nav__toplink${active('home')}">Home<span class="nav__caret"></span></a>
         <div class="nav__dropdown">
@@ -51,6 +54,21 @@ function buildNav() {
       <a href="contact.html" class="nav__toplink${active('contact')}">Contact</a>
     </nav>
   `;
+
+  // Phone menu: the button opens/closes the stacked link panel.
+  const toggle = mount.querySelector('.nav__toggle');
+  toggle.addEventListener('click', () => {
+    const open = mount.classList.toggle('nav--open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  // Close after tapping a link (matters for same-page anchors like #sponsors).
+  mount.querySelector('.nav__links').addEventListener('click', (e) => {
+    if (!e.target.closest('a')) return;
+    mount.classList.remove('nav--open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
+  });
 }
 
 buildNav();

@@ -84,7 +84,7 @@ Change the menu in that one function — all pages update.
 - [x] Headshots for the **3.0 Leadership** board — all 19 in `assets/img/board/bnd3/`, face-cropped to 4:5 head-and-shoulders from the photoshoot originals (2026-11-18, commit `b48e3c1`)
 - [x] **"Official Raas All-Stars Bid Competition"** badge on the Home hero (`.hero__badge`) — BND 3.0 confirmed as a RAS bid comp (2026-11-18)
 - [x] Sponsors: **Swagat Madison (Gold)** + **Potbelly (Silver)** added ahead of MSC/ASM (2026-11-18)
-- [ ] Mobile nav overflows the right edge at phone width (pre-existing)
+- [x] Phone menu: hamburger (`.nav__toggle`, built in `buildNav()`) under 900px opens a stacked panel with dropdowns inline; closes on link tap. Fixes the old right-edge overflow (2026-11-19)
 - [x] Finance board member on 3.0 Leadership — Vaibhav Singotam
 - [ ] Forms: real Liaisons & Event Manager Application link; Media photo gallery
 - [ ] **Activate FormSubmit** — submit the contact form once from the live site, click the confirmation email (then optionally swap in the random alias)
